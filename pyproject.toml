@@ -10,5 +10,5 @@ name = "spellathon-go"
 version = "0.1.0"
 [tool.poetry.dependencies]
 nltk = "^3.5"
-python = "^3.7"
+python = "^3.8"
 [tool.poetry.dev-dependencies]
