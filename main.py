@@ -6,9 +6,7 @@ print("\033[2J\033[H")
 print("SPELLATHON GO")
 time.sleep(3)
 from itertools import permutations
-print(
-    "This is where you can form words. First enter a compulsory letter. Then you can enter other letters which can be in the word. Enter a minimum of four letters in total. I will tell you all the possible words that can be made. The words will only have repeated letters, if you enter them."
-)
+print("This is where you can form words. First enter a compulsory letter. Then you can enter other letters which can be in the word. Enter a minimum of four letters in total. I will tell you all the possible words that can be made. The words will only have repeated letters, if you enter them.")
 time.sleep(1)
 from nltk.corpus import words
 from nltk.corpus import wordnet
@@ -33,8 +31,7 @@ final_letters = compulsory_letters_list + optional_letters
 original_permutations = []
 var = 0
 for t in range(len(final_letters) - 3):
-	original_permutations = list(permutations(final_letters,
-	                                          t + 4)) + original_permutations
+	original_permutations = list(permutations(final_letters, t + 4)) + original_permutations
 word_set = set(words_list)
 for i in original_permutations:
 	var = 0
